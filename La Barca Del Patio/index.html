@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>La barca del patio</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<script>
+	//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".cargador").fadeOut("slow");;
+	});
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+<div class="cargador"></div>
+<header id="top">
+	<nav id="cd-vertical-nav">
+	<ul id="mymenu">
+		<li>
+			<a data-number="1" href="#top" class="is-selected">
+				<span class="cd-dot"></span>
+				<span class="cd-label">ASJ</span>
+			</a>
+		</li>
+		<li>
+			<a data-number="2" href="#s2" class="">
+				<span class="cd-dot"></span>
+				<span class="cd-label">Formación académica</span>
+			</a>
+		</li>
+		<li>
+			<a data-number="3" href="#s3" class="">
+				<span class="cd-dot"></span>
+				<span class="cd-label">Experiencia profesional</span>
+			</a>
+		</li>
+		<li>
+			<a data-number="4" href="#s4" class="">
+				<span class="cd-dot"></span>
+				<span class="cd-label">Intereses</span>
+			</a>
+		</li>
+		<li>
+			<a data-number="5" href="#s5">
+				<span class="cd-dot"></span>
+				<span class="cd-label">Proyectos</span>
+			</a>
+		</li>
+		<li>
+			<a data-number="6" href="#s6">
+				<span class="cd-dot"></span>
+				<span class="cd-label">Contacto</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+</header>
+<!-- **************************************************SECCION 1**************************************************-->
+<section id="s1">
+	
+</section>
+<div class="parallax"></div>
+<!-- **************************************************SECCION 2**************************************************-->
+<section id="s2">
+	<div class="cuerpo">
+		
+			
+	</div>
+</section>
+<div class="parallax2"></div>
+<!-- **************************************************SECCION 3**************************************************-->
+<section id="s3">
+	<div class="cuerpo">
+		<h1>Hola</h1>
+		Scroll Up and Down this page to see the parallax scrolling effect.
+		This div is just here to enable scrolling.
+		Tip: Try to remove the background-attachment property to remove the scrolling effect.
+	</div>
+</section>
+</body>
+</html>
