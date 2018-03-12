@@ -2,13 +2,13 @@
 <html>
 <head>
 	<title>La barca del patio</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 	<script>
 	//paste this code under the head tag or in a separate js file.
 	// Wait for window load
@@ -47,58 +47,42 @@ $(document).ready(function(){
 </head>
 <body>
 <div class="cargador"></div>
-<header id="top">
-	<nav id="cd-vertical-nav">
-	<ul id="mymenu">
-		<li>
-			<a data-number="1" href="#top" class="is-selected">
-				<span class="cd-dot"></span>
-				<span class="cd-label">ASJ</span>
-			</a>
-		</li>
-		<li>
-			<a data-number="2" href="#s2" class="">
-				<span class="cd-dot"></span>
-				<span class="cd-label">Formación académica</span>
-			</a>
-		</li>
-		<li>
-			<a data-number="3" href="#s3" class="">
-				<span class="cd-dot"></span>
-				<span class="cd-label">Experiencia profesional</span>
-			</a>
-		</li>
-		<li>
-			<a data-number="4" href="#s4" class="">
-				<span class="cd-dot"></span>
-				<span class="cd-label">Intereses</span>
-			</a>
-		</li>
-		<li>
-			<a data-number="5" href="#s5">
-				<span class="cd-dot"></span>
-				<span class="cd-label">Proyectos</span>
-			</a>
-		</li>
-		<li>
-			<a data-number="6" href="#s6">
-				<span class="cd-dot"></span>
-				<span class="cd-label">Contacto</span>
-			</a>
-		</li>
-	</ul>
+<!-- **************************************************MENU*******************************************************-->
+<nav>
+    <div class="topnav" id="myTopnav">
+        <a href="#s1" class="active">Home</a>
+        <a href="#s2">News</a>
+        <a href="#s3">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
 </nav>
-</header>
 <!-- **************************************************SECCION 1**************************************************-->
 <section id="s1">
-	
+
 </section>
 <div class="parallax"></div>
 <!-- **************************************************SECCION 2**************************************************-->
 <section id="s2">
 	<div class="cuerpo">
-		
-			
+		<section id="story" class="description_content">
+			<div class="text-content container">
+				<div class="col-md-6">
+					<h1>About us</h1>
+					<div class="fa fa-cutlery fa-2x"></div>
+					<p class="desc-text">Restaurant is a place for simplicity. Good food, good beer, and good service. Simple is the name of the game, and we’re good at finding it in all the right places, even in your dining experience. We’re a small group from Denver, Colorado who make simple food possible. Come join us and see what simplicity tastes like.</p>
+				</div>
+				<div class="col-md-6">
+					<div class="img-section">
+						<img src="img/arroz.jpg" width="250" height="220">
+						<img src="img/tartar.jpg" width="250" height="220">
+						<div class="img-section-space"></div>
+						<img src="img/hojaldre.jpg"  width="250" height="220">
+						<img src="img/sanjacobos.jpg"  width="250" height="220">
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 </section>
 <div class="parallax2"></div>
@@ -111,5 +95,15 @@ $(document).ready(function(){
 		Tip: Try to remove the background-attachment property to remove the scrolling effect.
 	</div>
 </section>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 </body>
 </html>
